@@ -85,7 +85,7 @@
       <div class="row about">
         <h2> Or build a tool on your website that will raise awareness about an issue?</h2>
 	<p class="green">How much water is wasted with one leaky faucet?</p>
-	<input id="c"> leaks per minute</input>
+	<input id="leak"> leaks per minute</input>
 	<button onclick="calculate()">Try it!</button>
 	<p></p>
 	<p id="demo"></p>
@@ -104,8 +104,8 @@
 <script>
 function calculate() {
     {
-	var F = document.getElementById("c").value;
-        document.getElementById("demo").innerHTML = Number(F) * Number(34) + " gallons of water per year!";
+	var x = document.getElementById("leak").value;
+        document.getElementById("demo").innerHTML = Number(x) * Number(34) + " gallons of water per year!";
     }
 }
 </script>
